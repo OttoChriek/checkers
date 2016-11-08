@@ -102,7 +102,7 @@ public class CheckersMain {
         try {
             Y = Integer.parseInt(pieceCoords.substring(1, 2)) - 1; //TODO add conditional for invalid numerical input
             newY = Integer.parseInt(newCoords.substring(1, 2)) - 1;
-        } catch(NumberFormatException e) {
+        } catch(Exception e) {
             System.out.println("\t!Please format your input as a letter followed by a number!");
             return false;
         }
